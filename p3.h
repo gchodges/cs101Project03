@@ -23,6 +23,7 @@ public:
 
     Contact();
     Contact(std::string first, std::string last, Contact *next = nullptr);
+    
 };
 
 class ContactList {
@@ -46,6 +47,10 @@ public:
     bool removeContact(std::string first, std::string last);
     bool removeInfo(std::string first, std::string last, std::string infoName);
     bool checkList(Contact* toCheck);
+    bool checkListFL(std::string first, std::string last);
+
+    Contact* searchContact(std::string first, std::string last);
+    bool checkInfo(std::string infoName, std::string first,std::string last);
 
     ~ContactList();
     ContactList(const ContactList &src);
