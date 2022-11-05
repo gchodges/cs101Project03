@@ -52,10 +52,6 @@ public:
     Contact* searchContact(std::string first, std::string last);
     bool checkInfo(std::string infoName, std::string first,std::string last);
 
-    void clear();
-
-    void deepCopy(const ContactList &src);
-
     ~ContactList();
     ContactList(const ContactList &src);
     const ContactList &operator=(const ContactList &src);
